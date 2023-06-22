@@ -538,5 +538,12 @@
       "/// $0",
       "/// </summary>"
     ]
+  },
+  "Private ILogger": {
+    "prefix": "rologger",
+    "body": [
+      "private readonly ILogger<${1:$TM_FILENAME_BASE}> _logger;"
+    ],
+    "description": "Create a provate readonly ILogger"
   }
 }
