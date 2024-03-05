@@ -39,16 +39,6 @@
     ],
     "description": "Checked block"
   },
-  "Class": {
-    "prefix": "class",
-    "body": [
-      "class ${1:Name}",
-      "{",
-      "    $0",
-      "}"
-    ],
-    "description": "Class"
-  },
   "Console.WriteLine": {
     "prefix": "cw",
     "body": [
@@ -286,15 +276,8 @@
     ],
     "description": "Lock statement"
   },
-  "MessageBox.Show": {
-    "prefix": "mbox",
-    "body": [
-      "System.Windows.Forms.MessageBox.Show(\"${1:Text}\");$0"
-    ],
-    "description": "MessageBox.Show"
-  },
   "Namespace": {
-    "prefix": "namespace",
+    "prefix": "ns",
     "body": [
       "namespace ${1:Name}",
       "{",
@@ -502,7 +485,7 @@
     "description": "create xunit test method"
   },
   "Creates a Method structure": {
-    "prefix": "method",
+    "prefix": "meth",
     "body": [
       "${1:public} ${2:void} ${3:MyMethod}(${4:string} ${5:parameter})",
       "{",
@@ -512,7 +495,7 @@
     "description": "Creates a Method structure"
   },
   "Creates an Async Method structure": {
-    "prefix": "method_async",
+    "prefix": "ameth",
     "body": [
       "${1:public} async ${2:Task}<${3:object}> ${4:MyMethodAsync}(${5:string} ${6:parameter})",
       "{",
