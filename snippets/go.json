@@ -115,12 +115,12 @@
     "description": "Snippet for if else"
   },
   "if err != nil": {
-    "prefix": "ir",
+    "prefix": "ifr",
     "body": "if err != nil {\n\t${1:return ${2:nil, }${3:err}}\n}",
     "description": "Snippet for if err != nil"
   },
   "if err != nil panic": {
-    "prefix": "irp",
+    "prefix": "ifrp",
     "body": "if err != nil {\n\tpanic(err)\n}",
     "description": "Snippet for if err != nil"
   },

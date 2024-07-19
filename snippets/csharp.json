@@ -331,17 +331,6 @@
     ],
     "description": "An automatically implemented property. C# 3.0 or higher"
   },
-  "sim": {
-    "prefix": "sim",
-    "body": [
-      "static int Main(string[] args)",
-      "{",
-      "    $0",
-      "    return 0;",
-      "}"
-    ],
-    "description": "int Main()"
-  },
   "Struct": {
     "prefix": "struct",
     "body": [
@@ -422,8 +411,8 @@
     ],
     "description": "Unsafe statement"
   },
-  "Using statement": {
-    "prefix": "using",
+  "Using statement block": {
+    "prefix": "usblo",
     "body": [
       "using (${1:resource})",
       "{",
@@ -445,7 +434,7 @@
   "constructor": {
     "prefix": "ctor",
     "body": [
-      "${1:public} ${2:$TM_FILENAME_BASE}(${3:Parameters})",
+      "${1:public} ${2:$TM_FILENAME_BASE}(${3})",
       "{",
       "    $0",
       "}"
@@ -528,5 +517,30 @@
       "private readonly ILogger<${1:$TM_FILENAME_BASE}> _logger;"
     ],
     "description": "Create a provate readonly ILogger"
+  },
+  "Func body": {
+    "prefix": "fcbo",
+    "body": [
+      "=> {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create a body for a function"
+  },
+  "Action": {
+    "prefix": "action",
+    "body": [
+      "() => {$0}"
+    ],
+    "description": "Create a body for an action with no parameter"
+  },
+  "Block": {
+    "prefix": "block",
+    "body": [
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create a body for an action with no parameter"
   }
 }
