@@ -1,4 +1,11 @@
 {
+  "hugo shortcode hidden": {
+    "prefix": "schidden",
+    "body": [
+      "{{< hidden >}} $0 {{< /hidden >}}"
+    ],
+    "description": "Hugo shortcode hidden"
+  },
   "header 1": {
     "prefix": "h1",
     "body": [
